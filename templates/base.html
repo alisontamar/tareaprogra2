@@ -21,6 +21,7 @@
                     {% if 'username' in session %}
                         {% if session['role'] == 'admin' %}
                             <li class="nav-item">
+<<<<<<< HEAD
                                 <a class="nav-link" href="#">Gestión de Pedidos</a>
                             </li>
                             <li class="nav-item">
@@ -38,6 +39,19 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Preventa</a>
+=======
+                                <a class="nav-link" href="#">Gestión de Usuarios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Configuración del Sistema</a>
+                            </li>
+                        {% elif session['role'] == 'editor' %}
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Crear Contenido</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Editar Contenido</a>
+>>>>>>> cb8b87cde4a63446a03ef51cae9eb141a2d4cd6f
                             </li>
                         {% elif session['role'] == 'driver' %}
                             <li class="nav-item">

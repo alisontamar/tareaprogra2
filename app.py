@@ -10,6 +10,7 @@ app.secret_key = 'tu_clave_secreta_muy_segura'  # Cambia esto en producción
 
 # Simulación de una base de datos de usuarios
 users = {
+<<<<<<< HEAD
     'manager1': {'password': 'manager1pass', 'role': 'admin'},
     'manager2': {'password': 'manager2pass', 'role': 'admin'},
     'driver1': {'password': 'driver1pass', 'role': 'driver'},
@@ -18,6 +19,13 @@ users = {
     'seller1': {'password': 'seller1pass', 'role': 'seller'},
     'seller2': {'password': 'seller2pass', 'role': 'seller'},
     'seller3': {'password': 'seller3pass', 'role': 'seller'}
+=======
+    'admin': {'password': 'adminpass', 'role': 'admin'},
+    'driver1': {'password': 'driver1pass', 'role': 'driver'},
+    'driver2': {'password': 'driver2pass', 'role': 'driver'},
+    'driver3': {'password': 'driver3pass', 'role': 'driver'},
+    'editor': {'password': 'editorpass', 'role': 'editor'}
+>>>>>>> cb8b87cde4a63446a03ef51cae9eb141a2d4cd6f
 }
 
 def login_required(f):
